@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding-top: 70px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background-color: rgb(35, 35, 88);
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.hero {
+  background-color: rgb(31, 31, 108);
+  padding: 40px 20px;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+  max-width: 300px;
+  animation: zoomInFloat 2s ease-out forwards, float 4s ease-in-out infinite;
+  opacity: 0;
+}
+@keyframes zoomInFloat {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.hero h1,
+.hero h5 {
+  color: white;
+}
+
+.form-section,
+.details,
+.calculator {
+  background-color: white;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #0e2047;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #1f387d;
+}
+
+.card video {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.calculator input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+}
+.footer {
+  background-color: #1f387d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
